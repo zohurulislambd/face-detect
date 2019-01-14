@@ -27,7 +27,7 @@ if (isset ($_POST["sign_up"]) and $_POST["sign_up"] === 'Sign-Up Now' ){
 			header('Location: dashboard.php');
 		} else {
 			//$url = baseurl().'index.php?err=3';
-			header('Location: index.php?err=3');
+			header('Location: joinus.php?err=3');
 			//header( $url );
 		}
 	}

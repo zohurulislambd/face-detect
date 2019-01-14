@@ -128,7 +128,7 @@ class FaceDetector
     {
 		
         if (empty($this->face)) {
-            $url = baseurl().'login.php?err=3';
+            $url = baseurl().'index.php?err=3';
             header( 'Location:'. $url );
 			throw new Exception('No face detected');
         }

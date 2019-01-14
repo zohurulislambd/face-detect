@@ -33,7 +33,7 @@ if (mysqli_num_rows($userInfo) > 0){
 <body class="dashboard-body">
 <div class="welcome-img"></div>
 <div class = "content">
-<h4 class="similar-head"><?php echo "Aloha!! <span class='capitalize'>$name</span>, There are people with similar face attributes as yours. You might find your doppelganger!"; ?></h3>
+<h4 class="similar-head"><?php echo "Aloha!! <span class='capitalize'>$name</span>, There are people with similar face attributes as yours. You might find your doppelganger!"; ?></h4>
 <div> <a id="wer" href="dashboard.php" class="similar-dashboard">Dashboard</a></div>
 <div><a id="logout_btn" href="logout.php">LogOut</a></div>
 <?php 

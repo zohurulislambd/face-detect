@@ -26,7 +26,7 @@ if (isset ($_POST["compare"]) and $_POST["compare"] === 'Login Now' ){
 						header( 'Location:'. $url );
 					}
 					else {
-						$url = baseurl().'login.php?err=1';
+						$url = baseurl().'index.php?err=1';
 						header( 'Location:'. $url );
 					}
 				}
@@ -34,8 +34,8 @@ if (isset ($_POST["compare"]) and $_POST["compare"] === 'Login Now' ){
 		}
 	}
 	else {
-		$url = baseurl().'login.php?err=2';
-		header( $url );
+		$url = baseurl().'index.php?err=2';
+		header("Location:".$url);
 	}
 }
 include("include\db\close_connection.php");

@@ -38,7 +38,7 @@ if (mysqli_num_rows($userInfo) > 0){
 <td>EMAIL</td><td><?php echo $email ?></td>
 </tr>
 <tr>
-<td>PICTURE</td><td><img src="saved_images<?php echo '/'.$picture; ?>" width="150px"/> </td>
+<td>PICTURE</td><td><img src="<?php echo $picture; ?>" width="150px"/> </td>
 </tr>
 <table>
 </div>
