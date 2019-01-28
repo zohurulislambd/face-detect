@@ -135,7 +135,7 @@ if(isset($_REQUEST)){
 								<a id="retake_btn" class="btn btn-primary pull-left">Retake</a>
 								<input type="submit" class="btn btn-primary pull-left" name="compare" value="Login Now" />
 								<span class="change_link">Not a member yet ?
-									<a href="joinus.php" class="to_register">Join us</a>
+									<a href="joinus.php" class="to_register"><u>Join us</u></a>
 								</span>
 							</div>
 						</form>

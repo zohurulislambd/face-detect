@@ -1,8 +1,25 @@
+/*
+project name: Unique face object;
+Author Name: Md. Zohurul Islam.
+Version:1.0.1
+*/
+
+
+@font-face {
+    font-family:"playRegular";
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}@font-face {
+    font-family:"playBold";
+    src: url("../fonts/PlayfairDisplay-Bold.ttf");
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+
+
 body {
   margin: 0;
 }
@@ -13,7 +30,7 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
+hgroup,header h3
 main,
 nav,
 section,
@@ -2751,8 +2768,9 @@ hr {
   position: relative;
   min-height: 100vh;
   text-align: center;
-  background: #000 url(../img/bg.jpg) no-repeat center;
+  background: #000 url(../img/ufo-bg.jpg) no-repeat center center;
   background-size: cover;
+    /*background-attachment: fixed;*/
 }
 .left-side header {
   position: relative;
@@ -2766,27 +2784,31 @@ hr {
   font-size: 13px;
   color: #999;
   letter-spacing: 0.12em;
+
 }
+
 header h3 {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  font-size: 54px;
-  font-weight: 400;
-  line-height: 72px;
-  letter-spacing: 0.01em;
+    margin: 0;
+    font-family: 'playRegular', serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+    color: #FF5500;
 }
 .right-side {
-  position: relative;
-  padding: 120px 120px 100px 120px;
-  background: #fff;
-  text-align: center;
+    position: relative;
+    padding: 90px 130px 60px 120px;
+    background: #fff;
+    text-align: center;
 }
 .right-side .input {
   margin-top: 0;
   margin-left: 0;
 }
 .right-side .input input {
-  font-size: 14px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .right-side .cta {
   display: block;
@@ -2802,8 +2824,13 @@ header h3 {
   background: #ff5500;
   font-family: 'lato', sans-serif;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   border-radius: 24px;
+    transition: all linear 0.1s;
+}
+.btn:hover {
+    background: #e14900;
+    box-shadow: 0 0 3px #000;
 }
 input[type="submit"] {
 	float: right !important;
@@ -2815,11 +2842,15 @@ input[type="submit"] {
   float: left;
 }
 .right-side .cta span a {
-  font-family: 'lato', sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #999;
-  letter-spacing: 0.1em;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #0098F3;
+    letter-spacing: 0.1em;
+    font-style: italic;
+}
+.right-side .cta span:hover a{
+    color: #ff5500;
 }
 .right-side .social {
   position: absolute;
@@ -2887,7 +2918,7 @@ input[type="submit"] {
 }
 
 .dashboard-body {
-	background-color: antiquewhite;
+    background-color: #F9F9FA;
 }
 .dashboard-body .content h3{
 	margin: 0 10% 0 ;
